@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.font-sans-serif{
+    font-family: "pf-din", Impact, sans-serif;
+}
+body{
+    background-color: black;
+    font-family: "news", Georgia, serif;
+}
+
+.email-link:hover{
+    color: #ff2500;
+}
+
+.hero{
+    background-image: url("./Images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: fit-content;
+}
+
+h1{
+    font-family: "pf-din", Impact, sans-serif;
+    text-transform: uppercase;
+    /* font-weight: bolder; */
+    font-size: 54px;
+}
+
+.font-32{
+    font-size: 32px;
+}
+
+.text-gray{
+    color: #888;
+}
+
+.btn-orange{
+    background-color: #FF2500;
+    padding: 12px 25px;
+    color: #FFFFFF;
+    font-size: 22px;
+    border-bottom: 2px #c20027 solid;
+    font-family: "pf-din", Impact, sans-serif;
+}
+
+.btn-orange:hover{
+    background-color: #c20027;
+    color: #FFFFFF;
+}
+
+.legal-links:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+}

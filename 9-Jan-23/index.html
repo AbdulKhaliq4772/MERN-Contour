@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <title>First Day 9-Jan-23</title>
+</head>
+<body>
+    <h1>Headings</h1>
+    <h1 id="h1">heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+
+    <h1>Unordered List</h1>
+    <ul >
+        <li>Orange</li>
+        <li>banana</li>
+        <li>Apple</li>
+    </ul>
+
+    <h1>Ordered list</h1>
+    <ol start="30">
+        <li>Karachi</li>
+        <li>Lahore</li>
+        <li>Islamabad</li>
+    </ol>
+
+    <h1>Tables</h1>
+    <table border="1">
+        <thead>
+            <td>S no</td>
+            <td>Name</td>
+            <td>roll no.</td>
+            <td>roll no.</td>
+        </thead>
+
+        <tr>
+            <td>1</td>
+            <td>Abdul Khaliq</td>
+            <td colspan="2">B1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ali</td>
+            <td rowspan="2" colspan="2">B2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Babar</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h1>Forms</h1>
+    <form>
+        <label for="username">Username</label>
+        <input type="text"  id="username" placeholder="enter username" required>
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" required>
+        <br><br>
+        <label for="password">password</label>
+        <input type="password" name="password" required>
+        <br><br>
+        
+        <input type="color">
+        <br><br>
+        <textarea name="" id="" cols="10" rows="3"></textarea>
+        <br><br>
+        <select name="Letters" id="">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+        <br><br>
+        <img src="./Capture.PNG" alt="windows-10-wallpaper" height="100px">
+        <br><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob">
+        <br><br>
+        <input type="submit">
+        <br><br>
+        <label for="search"></label>
+        <input type="search" name="search">
+        <br><br>
+        <input type="time">
+        <br><br>
+        <input type="hidden">
+        <br><br>
+        <input type="reset">
+        <br><br>
+        <input type="file" name="" id="">
+        <br><br>
+        <input type="url" name="" id="">
+        <br><br>
+        <input type="datetime" name="" id="">
+        <br><br>
+        <input type="range" name="" id="">
+        <br><br>
+        <input type="radio" name="fav-language" id="html">
+        <label for="html">HTML</label>
+        <input type="radio" name="fav-language" id="css">
+        <label for="css">CSS</label>
+        <input type="radio" name="fav-language" id="javascript">
+        <label for="javascript">JavaScript</label>
+        <br><br>
+        <input type="checkbox" name="vehicle1" id="car">
+        <label for="car">Car</label>
+        <input type="checkbox" name="vehicle2" id="bus">
+        <label for="bus">Bus</label>
+        <input type="checkbox" name="vehicle3" id="boat">
+        <label for="boat">boat</label>
+
+        <label for="mindate">Enter a date before 12-4-98</label>
+        <input type="date" name="mindate" id="mindate" min="98-4-12" max="22-12-31">
+        <input type="submit" value="">
+
+        <h1>The value of sum is: <span id="replaceNumber">number</span></h1>
+
+    </form>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container-fluid border d-flex flex-column justify-content-center" style="height: 100vh;">
+        <div class="row align-items-center">
+            <div class="col-md-4 offset-md-4">
+                <form action="" class="container text-center">
+                    <h1 class="mb-3">Registration form</h1>
+                    <div class="form-floating mb-2">
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Name" required>
+                        <label for="Name">Name</label>
+                        <p class="user-name-msg" style="text-align: left;"></p>
+                    </div>
+                    <div class="form-floating mb-2">
+                        <input type="email" class="form-control" name="username" id="email" placeholder="Email">
+                        <label for="email">Email</label>
+                        <p class="email-msg" style="text-align: left;"></p>
+                    </div>
+                    <div class="form-floating mb-2">
+                        <input type="text" class="form-control" name="project" id="project-name" placeholder="project">
+                        <label for="project">Project Name</label>
+                        <p class="project-name-msg" style="text-align: left;"></p>
+                    </div>
+                    <div class="form-floating mb-2">
+                        <textarea class="form-control" placeholder="Leave a comment here" style="height: 100px;"
+                            id="project-description"></textarea>
+                        <label for="project-description">Project Details</label>
+                        <p class="project-description-msg" style="text-align: left;"></p>
+                    </div>
+                    <input type="submit" class="btn btn-success" value="submit" onclick="validation()">
+                    <input type="reset" class="btn btn-primary" value="reset">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
