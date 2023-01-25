@@ -51,7 +51,7 @@
 //     }
 // }
 
-// let p1 = new Player(01, "ali", 30, "12-4-42", 99);
+// let p1 = new Player(01, " ali",30, "12-4-42", 99);
 // console.log(p1.DisplayInfo());
 // p1.AddRuns(90);
 // console.log(p1.GetRuns());
@@ -279,9 +279,30 @@
 // TASK # 7
 
 class Car{
-    setName(){}
-    setMake(){}
-    setColor(){}
-    setSpeed(){}  
-    print(){}
-} 
+    #name;
+    #make;
+    #color;
+    #speed;
+    setName(name){
+        this.#name=name;
+        return this;
+    }
+    setMake(maker){
+        this.#make=maker;
+        return this;
+    }
+    setColor(color){
+        this.#color=color;
+        return this;
+    }
+    setSpeed(speed){
+        this.#speed=speed;
+        return this;
+    }  
+    print(){
+        console.log(`Name: ${this.#name}\nMake: ${this.#make}\nColor: ${this.#color}\nSpeed : ${this.#speed}`);
+    }
+}
+
+let corolla = new Car();
+corolla.setName("Corolla").setMake("Toyota").setColor("White").setSpeed("120 km/hr").print();

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src='http://assets.stickpng.com/thumbs/580b585b2edbce24c47b2704.png' alt='photos' height='150px' width="150px" />
+    <img src='https://static.vecteezy.com/system/resources/previews/001/193/929/non_2x/vintage-car-png.png' alt='photos'
+        height='150px' width="150px"/>
+    <img src='https://www.kindpng.com/picc/m/381-3816942_indoor-plants-png-transparent-png.png' alt='photos'
+        height='150px' width="150px"/>
+    <img src='https://www.freepnglogos.com/uploads/dog-png/bow-wow-gourmet-dog-treats-are-healthy-natural-low-4.png'
+        alt='photos' height='150px' width="150px"/>
+    <img src='https://assets.webiconspng.com/uploads/2017/09/House-PNG-Image-45779.png' alt='photos' height='150px' width="150px"/>
+
+    <script>
+        let images = document.getElementsByTagName('img');
+        
+        for(let i=0; i<images.length; i++){
+            console.log(images[i]);
+            if(i%2==0){
+                images[i].style.border = "2px solid red";
+            } else {
+                images[i].style.border = "2px solid blue";
+            }
+        }
+    </script>
+</body>
+
+</html>

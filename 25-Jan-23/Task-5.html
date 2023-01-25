@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 5</title>
+</head>
+
+<body>
+    <p id="text" onmouseover="highLight()" onmouseout="normal()">Lorem ipsum dolor, sit amet <b>consectetur</b> adipisicing elit. Ipsam deserunt <b>perspiciatis</b> id voluptatibus dicta
+        mollitia porro <b>repellendus</b> facilis optio fuga!</p>
+
+    <script>
+        let boldElements = document.getElementById('text').getElementsByTagName('b');
+        console.log(boldElements);
+
+        function highLight(){
+            for(let i=0; i<boldElements.length; i++){
+            boldElements[i].style.color="red";
+        }
+        }
+        function normal(){
+            for(let i=0; i<boldElements.length; i++){
+            boldElements[i].style.color="black";
+        }
+        }
+
+
+    </script>
+</body>
+
+</html>
