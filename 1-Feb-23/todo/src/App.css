@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+}
+
+#root{
+  
+}
+
+li{
+  list-style: none;
+}
+
+.main{
+  background-color: aqua;
+}
+
+#taskInput{
+  height: 40px;
+  width: 60%;
+  outline: none;
+  padding: 3px 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.tasks{
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 4px 0;
+  padding: 5px 10px;
+}

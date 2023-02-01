@@ -6,7 +6,7 @@ const Items = [
     { title: "mango", isfruit: true, id: 3 }
 ];
 
-export default function FruitList() {
+export default function FruitList() {                          
     let listItems = Items.map(item =>
         <li
             key={item.id}
@@ -15,5 +15,5 @@ export default function FruitList() {
         </li>);
     return (
         <ul>{listItems}</ul>
-    )
+    );
 }

@@ -5,6 +5,7 @@ function msg(){
 }
 
 export default function Button(){
+    
     return (
         <button onClick={msg}>Click me</button>
     );
