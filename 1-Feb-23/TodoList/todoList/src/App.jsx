@@ -3,34 +3,31 @@ import { useState } from "react";
 
 function App(){
   const [todo, setTodo] = useState({
+    id:'',
     title: "",
     isDone: false
   })
 
   const [todoValue, setTodovalue] = useState([]);
-  const [readValue, setReadValues] = useState([]);
 
   let handleInput = (e)=>{
-    setTodo({...todo, title: e.target.value});
-    console.log(todo.title);
+    setTodo({...todo, id:Math.random(),title: e.target.value, isDone:false});
   }
 
   let handleAddButton = ()=>{
     setTodovalue([...todoValue, todo]);
-    console.log(todo);
-    console.log(todoValue);
   }
-const handleOnReadList = (val, id) => {
-  let dummyArray = [...todoValue]
-  console.log('-------handleOnReadList------', val, id);
-  if(true) {
-    dummyArray[id].splice()
-    console.log('---abc----', dummyArray[id].splice())
-    setTodovalue(dummyArray)
-  }
-  setReadValues()
 
-}
+  let handleDelete=(id)=>{
+    console.log(id);
+     let temp = [...todoValue];
+     let incompleteList = temp.filter(item=>item.id !== id)
+     console.log(incompleteList);
+     setTodovalue(incompleteList);
+      console.log("delete");
+  }
+
+
   return (
     <div className="main">
       <div>
@@ -38,11 +35,10 @@ const handleOnReadList = (val, id) => {
         <button onClick={handleAddButton}>Add</button>
       </div>
       <ul>
-        {todoValue.map((todos,index)=><li>
+        {todoValue.map((todos, index)=><li key={index}>
           <div>
-          <p>{todos.title}</p>
-          <input type="checkbox" name="" id="" onClick={()=> handleOnReadList(todos, index)}/>
-          <p>{todos.isDone? "completed" : "incomplete"} </p>
+            {todos.title}
+          <button onClick={()=>{handleDelete(todos.id)}}>delete</button>
           </div>
         </li>)}
       </ul>
@@ -51,5 +47,4 @@ const handleOnReadList = (val, id) => {
 
   );
 }
-
 export default App;
